@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import com.xiwen.yxw.document.CreateIndex;
+import com.xiwen.yxw.build.CreateIndex;
 import com.xiwen.yxw.search.SearchIndex;
 
 public class TestMain {

@@ -1,4 +1,4 @@
-package com.xiwen.yxw.document;
+package com.xiwen.yxw.build;
 
 import java.io.IOException;
 import java.nio.file.Paths;

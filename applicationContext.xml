@@ -13,17 +13,18 @@
 			<value>application.properties</value>
         </property>
     </bean>
-    
-    	<bean class="com.xiwen.yxw.document.CreateIndex" id="createIndex">
-       		<property name="indexHome">
-       			<value>${index.data.home}</value>
-       		</property>
-       	</bean>
-       	
-       	<bean class="com.xiwen.yxw.search.SearchIndex" id="searchIndex">
-       		<property name="indexHome">
-       			<value>${index.data.home}</value>
-       		</property>
-       	</bean>
 
+	<bean class="com.xiwen.yxw.build.CreateIndex" id="createIndex">
+		<property name="indexHome">
+			<value>${index.data.home}</value>
+  		</property>
+	</bean>
+  	
+	<bean class="com.xiwen.yxw.search.SearchIndex" id="searchIndex">
+		<property name="indexHome">
+			<value>${index.data.home}</value>
+		</property>
+  	</bean>
+
+	
 </beans>

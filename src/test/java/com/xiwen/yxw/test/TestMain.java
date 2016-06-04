@@ -11,7 +11,7 @@ import com.xiwen.yxw.search.SearchIndex;
 
 public class TestMain {
 	
-	private ApplicationContext ac = (ApplicationContext) new FileSystemXmlApplicationContext("applicationContext.xml");
+	private ApplicationContext ac = (ApplicationContext) new FileSystemXmlApplicationContext("classpath:spring/applicationContext.xml");
 	
 	@Test
 	public void test1() {

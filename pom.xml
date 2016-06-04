@@ -6,9 +6,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>search</groupId>
 	<artifactId>simple-search</artifactId>
+    <packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
- 
- 
+
 	<dependencies>
 		
 		<!-- http://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->

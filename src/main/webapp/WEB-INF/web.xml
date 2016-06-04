@@ -8,7 +8,7 @@
 	<!-- 配置业务层spring文件，这些spring文件被父spring容器所引用， 在web层可以访问 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>applicationContext.xml</param-value>
+		<param-value>classpath:spring/*</param-value>
     </context-param>
 
 

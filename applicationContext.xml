@@ -7,20 +7,23 @@
 		http://www.springframework.org/schema/context  
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">   
         
-	<bean id="bean.context" class="org.springframework.context.support.ClassPathXmlApplicationContext">
-        <constructor-arg>
-            <list>
-                <value>classpath*:springbean/*</value>
-            </list>
-        </constructor-arg>
-    </bean>
     
     <bean id="property.context" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location">
-        	<list>
-				<value>classpath*:springproperty/*</value>
-        	</list>
+			<value>application.properties</value>
         </property>
     </bean>
+    
+    	<bean class="com.xiwen.yxw.document.CreateIndex" id="createIndex">
+       		<property name="indexHome">
+       			<value>${index.data.home}</value>
+       		</property>
+       	</bean>
+       	
+       	<bean class="com.xiwen.yxw.search.SearchIndex" id="searchIndex">
+       		<property name="indexHome">
+       			<value>${index.data.home}</value>
+       		</property>
+       	</bean>
 
 </beans>

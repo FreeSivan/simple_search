@@ -7,4 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/search")
 public class SimpleSearchEntry {
 
+    @RequestMapping("/main")
+    public String searchReal() {
+        return "search/main";
+    }
+
 }

@@ -8,13 +8,18 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
+    <!-- controller类所在的目录， 加载器会到该目录下扫描controller -->
     <context:component-scan base-package="com.xiwen.yxw"/>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- jsp文件所在目录 -->
         <property name="prefix">
             <value>/WEB-INF/views/</value>
         </property>
+        <!-- jsp 文件后缀  -->
         <property name="suffix">
             <value>.jsp</value>
         </property>
     </bean>
+
 </beans>

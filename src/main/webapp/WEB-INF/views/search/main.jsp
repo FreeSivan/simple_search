@@ -11,7 +11,7 @@
     <title>search main page</title>
 </head>
 <body>
-    <form method="post" action="<c:url value=\'/search.html'/>">
+    <form method="post" action="/simple/search">
         <table>
             <tr>
                 <td>检索域</td>

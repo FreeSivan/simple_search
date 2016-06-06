@@ -19,8 +19,8 @@ public class TestMain {
 			CreateIndex createIndex = (CreateIndex)ac.getBean("createIndex");
 			createIndex.createIndex();
 			
-			SearchIndex searchIndex = (SearchIndex)ac.getBean("searchIndex");
-			searchIndex.searchIndex("content", "xi");
+			//SearchIndex searchIndex = (SearchIndex)ac.getBean("searchIndex");
+			//searchIndex.searchIndex("content", "xi");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

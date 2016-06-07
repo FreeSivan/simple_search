@@ -6,21 +6,21 @@
 		http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
 	<!-- 配置业务层spring文件，这些spring文件被父spring容器所引用， 在web层可以访问 -->
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring/*</param-value>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring/*</param-value>
     </context-param>
 
-	<listener>
-		<listener-class>
-			org.springframework.web.context.ContextLoaderListener
-		</listener-class>
-	</listener>
+    <listener>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
 
-	<servlet>
-		<servlet-name>simpleSearchEntry</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<load-on-startup>1</load-on-startup>
+    <servlet>
+        <servlet-name>simpleSearchEntry</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
     
     <servlet-mapping>

@@ -11,13 +11,11 @@
 		<param-value>classpath:spring/*</param-value>
     </context-param>
 
-
 	<listener>
 		<listener-class>
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
 	</listener>
-
 
 	<servlet>
 		<servlet-name>simpleSearchEntry</servlet-name>
@@ -26,8 +24,8 @@
     </servlet>
     
     <servlet-mapping>
-		<servlet-name>simpleSearchEntry</servlet-name>
-		<url-pattern>/</url-pattern>
+        <servlet-name>simpleSearchEntry</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
 </web-app>

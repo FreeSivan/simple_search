@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" 
-		xmlns="http://java.sun.com/xml/ns/javaee"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-		http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
     <!-- 配置业务层spring文件，这些spring文件被父spring容器所引用， 在web层可以访问 -->
     <context-param>
